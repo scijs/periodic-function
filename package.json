@@ -4,7 +4,7 @@
   "description": "Collection of periodic functions",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test --harmony"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,8 @@
     "math",
     "sine",
     "cosine",
-    "sawtooth"
+    "sawtooth",
+    "dsp"
   ],
   "author": "Dima Yv <dfcreative@gmail.com>",
   "license": "MIT",
