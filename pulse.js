@@ -1,7 +1,7 @@
 'use strict'
 
-module.exports = function pulse (t, rate) {
-	let step = rate ? 1/rate : 1e-2
-	if (t <= step) return 1;
-	return 0;
+module.exports = function pulse (t, tlr) {
+	if (tlr == null) tlr = 0
+	if (t <= tlr) return 1
+	return 0
 };
