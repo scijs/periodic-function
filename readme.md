@@ -1,6 +1,6 @@
 # periodic-function [![unstable](https://img.shields.io/badge/stability-unstable-green.svg)](http://github.com/badges/stability-badges) [![Build Status](https://img.shields.io/travis/dfcreative/periodic-function.svg)](https://travis-ci.org/dfcreative/periodic-function)
 
-Collection of periodic functions with period in turns.
+Collection of periodic functions with period normalized to turns.
 
 ## Usage
 
