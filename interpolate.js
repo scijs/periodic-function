@@ -10,5 +10,5 @@ module.exports = function interpolate(t, samples) {
 	right %= samples.length
 	var ratio = ptr - left
 
-	return samples[left] * ratio + samples[right] * (1 - ratio)
+	return samples[right] * ratio + samples[left] * (1 - ratio)
 }

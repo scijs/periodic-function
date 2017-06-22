@@ -144,6 +144,13 @@ t('clausen', t => {
 t('interpolate', t => {
 	let set = Array.from({length: 6}, (v, i) => Math.random()*2 - 1)
 	draw(fn.interpolate, set)
+
+	var int = populate(fn.interpolate, 10, [0, .5, 1, .5, 0]);
+	t.equal(int[0], 0)
+	t.equal(int[1], 0.25)
+	t.equal(int[2], 0.5)
+	t.equal(int[9], 0)
+
 	t.end()
 })
 
