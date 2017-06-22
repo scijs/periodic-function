@@ -5,6 +5,8 @@ const fn = require('./')
 const almost = require('almost-equal')
 
 function draw(fn, ...args) {
+	if (typeof document === 'undefined') return
+
 	let arr = populate(fn, 32, ...args)
 
 	let canvas = document.body.appendChild(document.createElement('canvas'))
