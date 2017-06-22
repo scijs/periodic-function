@@ -31,6 +31,7 @@ The `fn` takes the amount of turn `t` as the first argument and optional paramet
 | `pulse(t)` | ![pulse](https://raw.githubusercontent.com/dfcreative/periodic-function/master/pulse.png) | Delta-pulse, which is `1` at `0` and `0` anywhere else. |
 | `fourier(t, real, imag?, normalize=false)` | ![fourier](https://raw.githubusercontent.com/dfcreative/periodic-function/master/fourier.png) | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients, ie. harmonics. `0` harmonic is static level, `1`st is base frequency, `2`nd is double base frequency, `3`rd is triple etc. Set `normalize=true` to bring max harmonic to `1`. |
 | `noise(t)` | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/noise.png) | Repeated sample of noise. |
+| `clausen(t)` | ![clausen](https://raw.githubusercontent.com/dfcreative/periodic-function/master/clausen.png) | [Clausen function](https://en.wikipedia.org/wiki/Clausen_function). |
 
 ## Related
 

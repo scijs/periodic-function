@@ -10,5 +10,6 @@ module.exports = {
 	sawtooth: require('./sawtooth'),
 	square: require('./square'),
 	pulse: require('./pulse'),
-	fourier: require('./fourier')
+	fourier: require('./fourier'),
+	clausen: require('./clausen')
 }

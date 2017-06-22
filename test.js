@@ -133,3 +133,10 @@ t('noise', t => {
 	draw(fn.noise)
 	t.end()
 })
+
+t('clausen', t => {
+	draw(fn.clausen)
+	var clausen = populate(fn.clausen, 10);
+	t.ok(almost(clausen[5], 0))
+	t.end()
+});
