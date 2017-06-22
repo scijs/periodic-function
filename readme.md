@@ -24,13 +24,13 @@ The `fn` takes number of turns `τ` as the first argument and optional parameter
 
 | Signature | Waveform | Meaning |
 ---|:---:|---|
-| `sine(τ, phase=0)` | ![sine](https://raw.githubusercontent.com/dfcreative/periodic-function/master/sine.png) | `Math.sin` normalized to number of turns `0..1`. |
-| `triangle(τ, ratio=0.5)` | ![triangle](https://raw.githubusercontent.com/dfcreative/periodic-function/master/triangle.png) | |
+| `sine(τ, phase=0)` | ![sine](https://raw.githubusercontent.com/dfcreative/periodic-function/master/sine.png) | `Math.sin` normalized to number of turns `0..1` rather than radians. To turn into cos, set `phase=.25`. |
+| `triangle(τ, ratio=0.5)` | ![triangle](https://raw.githubusercontent.com/dfcreative/periodic-function/master/triangle.png) | Triangular waveform with regulated ratio. To turn into sawtooth set `ratio=0` or `ratio=1`. |
 | `sawtooth(τ, inverse=false)` | ![sawtooth](https://raw.githubusercontent.com/dfcreative/periodic-function/master/sawtooth.png) | |
-| `square(τ, ratio=0.5)` | ![square](https://raw.githubusercontent.com/dfcreative/periodic-function/master/square.png) | |
-| `pulse(τ)` | ![pulse](https://raw.githubusercontent.com/dfcreative/periodic-function/master/pulse.png) | |
-| `fourier(τ, real, imag?, normalize?)` | ![fourier](https://raw.githubusercontent.com/dfcreative/periodic-function/master/fourier.png) | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients.
-| `noise(τ)` | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/noise.png) | |
+| `square(τ, ratio=0.5)` | ![square](https://raw.githubusercontent.com/dfcreative/periodic-function/master/square.png) | Rectangular waveform with regulated ratio. To turn into pulse set `ratio=0`. |
+| `pulse(τ)` | ![pulse](https://raw.githubusercontent.com/dfcreative/periodic-function/master/pulse.png) | Delta-pulse, which is `1` at `0` and `0` anywhere else. |
+| `fourier(τ, real, imag?, normalize?)` | ![fourier](https://raw.githubusercontent.com/dfcreative/periodic-function/master/fourier.png) | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients, ie. harmonics. 0 harmonic is static level, 1st is base frequency, 2nd is double base frequency, 3rd is triple etc. |
+| `noise(τ)` | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/noise.png) | Repeated sample of noise. |
 
 ## Related
 
