@@ -2,8 +2,6 @@
 
 Collection of periodic functions with period in turns.
 
-![periodic-function](https://github.com/dfcreative/periodic-function/blob/gh-pages/index.png?raw=true)
-
 ## Usage
 
 [![npm install periodic-function](https://nodei.co/npm/periodic-function.png?mini=true)](https://npmjs.org/package/periodic-function/)
@@ -24,13 +22,13 @@ Require a function as `let fn = require('periodic-function/<fn>')` or the whole 
 
 | Function | Waveform | Meaning |
 ---|---|---|
-| `sine(τ, phase=0)` | [!sine]() | `Math.sin` normalized to number of turns `0..1`. |
-| `triangle(τ, ratio=0.5)` | [!triangle]() | |
-| `sawtooth(τ, inverse=false)` | [!sawtooth]() | |
-| `square(τ, ratio=0.5)` | [!square]() | |
-| `pulse(τ)` | [!pulse]() | |
-| `fourier(τ, real, imag?, normalize?)` | [!fourier]() | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients.
-| `noise(τ)` | [!noise]() | |
+| `sine(τ, phase=0)` | ![sine](https://raw.githubusercontent.com/dfcreative/periodic-function/master/sine.png) | `Math.sin` normalized to number of turns `0..1`. |
+| `triangle(τ, ratio=0.5)` | ![triangle](https://raw.githubusercontent.com/dfcreative/periodic-function/master/triangle.png) | |
+| `sawtooth(τ, inverse=false)` | ![sawtooth](https://raw.githubusercontent.com/dfcreative/periodic-function/master/sawtooth.png) | |
+| `square(τ, ratio=0.5)` | ![square](https://raw.githubusercontent.com/dfcreative/periodic-function/master/square.png) | |
+| `pulse(τ)` | ![pulse](https://raw.githubusercontent.com/dfcreative/periodic-function/master/pulse.png) | |
+| `fourier(τ, real, imag?, normalize?)` | ![fourier](https://raw.githubusercontent.com/dfcreative/periodic-function/master/fourier.png) | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients.
+| `noise(τ)` | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/noise.png) | |
 
 ## Related
 
