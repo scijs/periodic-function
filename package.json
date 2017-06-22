@@ -1,0 +1,30 @@
+{
+  "name": "periodic-function",
+  "version": "1.0.0",
+  "description": "Collection of periodic functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfcreative/periodic-function.git"
+  },
+  "keywords": [
+    "periodic",
+    "math",
+    "sine",
+    "cosine",
+    "sawtooth"
+  ],
+  "author": "Dima Yv <dfcreative@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfcreative/periodic-function/issues"
+  },
+  "homepage": "https://github.com/dfcreative/periodic-function#readme",
+  "devDependencies": {
+    "almost-equal": "^1.1.0",
+    "tape": "^4.6.3"
+  }
+}
