@@ -103,14 +103,20 @@ t('saw', t => {
 	draw(fn.sawtooth)
 	var saw = populate(fn.sawtooth, 8);
 	t.equal(saw[0], 1);
-	t.equal(saw[7], -1);
+	t.equal(saw[7], -.75);
+
+	draw(fn.sawtooth, true)
+	var sawi = populate(fn.sawtooth, 8, true);
+	t.equal(sawi[0], -1);
+	t.equal(sawi[7], .75);
 	t.end()
 });
 
 
 t('fourier', t => {
 	draw(fn.fourier, [0, 1, 0, .5], [0, .5, 0, .1], true)
-	var saw = populate(fn.fourier, 8, [1, .5, .25, .125]);
+	var series = populate(fn.fourier, 8, [1, .5, .25, .125], true);
+	t.equal(series[0], 1)
 	t.end()
 });
 
