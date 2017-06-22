@@ -76,8 +76,16 @@ t('square', t => {
 	t.equal(square[4], 1);
 	t.equal(square[5], -1);
 	t.equal(square[9], -1);
+
+	draw(fn.square, .1)
+	var square = populate(fn.square, 10, .1);
+	t.equal(square[0], 1);
+	t.equal(square[4], -1);
+	t.equal(square[5], -1);
+	t.equal(square[9], -1);
 	t.end()
 });
+
 
 t('triangle', t => {
 	draw(fn.triangle)
