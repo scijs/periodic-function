@@ -18,7 +18,7 @@ let fullTurn = fn(1)
 
 ## API
 
-### let fn = require('periodic-function/<fn>')
+### let fn = require('periodic-function/\<fn\>')
 
 The `fn` takes the amount of turn `t` as the first argument and optional parameters. The list of available functions:
 
