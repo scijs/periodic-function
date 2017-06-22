@@ -62,16 +62,16 @@ t('delta', t => {
 });
 
 t('pulse', t => {
-	var pulse = fn.pulse(10, 0);
+	var pulse = populate(fn.pulse, 10, 0);
 	t.equal(pulse[0], 1);
-	t.equal(pulse[1], -1);
-	t.equal(pulse[9], -1);
+	t.equal(pulse[1], 0);
+	t.equal(pulse[9], 0);
 	t.end()
 });
 
 t('square', t => {
 	draw(fn.square)
-	var square = fn.square(10);
+	var square = populate(fn.square, 10);
 	t.equal(square[0], 1);
 	t.equal(square[4], 1);
 	t.equal(square[5], -1);
@@ -81,13 +81,21 @@ t('square', t => {
 
 t('triangle', t => {
 	draw(fn.triangle)
-	var triangle = fn.triangle(8);
-	t.equal(triangle[0], 0);
+	var triangle = populate(fn.triangle, 8);
+	t.equal(triangle[0], 1);
 	t.equal(triangle[1], 0.5);
-	t.equal(triangle[2], 1);
-	t.equal(triangle[3], 0.5);
-	t.equal(triangle[4], 0);
-	t.equal(triangle[6], -1);
+	t.equal(triangle[2], 0);
+	t.equal(triangle[3], -.5);
+	t.equal(triangle[4], -1);
+	t.equal(triangle[6], 0);
+	t.equal(triangle[7], 0.5);
+	t.end()
+});
+
+t('triangle ratio', t => {
+	draw(fn.triangle, .25)
+	var triangle = populate(fn.triangle, 8, .25);
+	t.equal(triangle[2], -1)
 	t.end()
 });
 
