@@ -30,8 +30,10 @@ The `fn` takes the amount of turn `t` as the first argument and optional paramet
 | <code>square(t,&nbsp;ratio=0.5)</code> | ![square](https://raw.githubusercontent.com/dfcreative/periodic-function/master/square.png) | Rectangular waveform with regulated ratio. To turn into pulse set `ratio=0`. |
 | <code>pulse(t,&nbsp;tlr=0)</code> | ![pulse](https://raw.githubusercontent.com/dfcreative/periodic-function/master/pulse.png) | Delta-pulse, which is `1` at `0` and `0` anywhere else. Pass `tlr` as a precision tolerance, ie. `1e-5`. |
 | <code>fourier(t,&nbsp;real,&nbsp;imag?, normalize=false)</code> | ![fourier](https://raw.githubusercontent.com/dfcreative/periodic-function/master/fourier.png) | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients, ie. harmonics. `0` harmonic is static level, `1`st is base frequency, `2`nd is double base frequency, `3`rd is triple etc. Set `normalize=true` to bring max harmonic to `1`. |
-| <code>noise(t)</code> | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/noise.png) | Repeated sample of noise. |
 | <code>clausen(t,&nbsp;limit=10)</code> | ![clausen](https://raw.githubusercontent.com/dfcreative/periodic-function/master/clausen.png) | [Clausen function](https://en.wikipedia.org/wiki/Clausen_function). Pass `limit` to indicate number of iterations, precision/performance tradeoff. |
+| <code>noise(t)</code> | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/noise.png) | Repeated sample of noise. |
+| <code>step(t, samples)</code> | ![step](https://raw.githubusercontent.com/dfcreative/periodic-function/master/step.png) | [Step function](https://en.wikipedia.org/wiki/Step_function). Picks closest sample value. |
+| <code>interpolate(t, samples)</code> | ![interpolate](https://raw.githubusercontent.com/dfcreative/periodic-function/master/interpolate.png) | Interpolate between closest values out of a set samples. |
 
 If you feel like it is not complete list of you know example of a good periodic function, suitable for dsp, welcome to [contribute](https://github.com/dfcreative/periodic-function/issues).
 

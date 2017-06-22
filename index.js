@@ -11,5 +11,7 @@ module.exports = {
 	square: require('./square'),
 	pulse: require('./pulse'),
 	fourier: require('./fourier'),
-	clausen: require('./clausen')
+	clausen: require('./clausen'),
+	interpolate: require('./interpolate'),
+	step: require('./step')
 }

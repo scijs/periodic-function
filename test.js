@@ -140,3 +140,15 @@ t('clausen', t => {
 	t.ok(almost(clausen[5], 0))
 	t.end()
 });
+
+t('interpolate', t => {
+	let set = Array.from({length: 6}, (v, i) => Math.random()*2 - 1)
+	draw(fn.interpolate, set)
+	t.end()
+})
+
+t('step', t => {
+	let set = Array.from({length: 6}, (v, i) => Math.random()*2 - 1)
+	draw(fn.step, set)
+	t.end()
+})
