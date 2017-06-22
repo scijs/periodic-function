@@ -106,5 +106,6 @@ t('fourier', t => {
 
 
 t('noise', t => {
-
+	draw(fn.noise)
+	t.end()
 })
