@@ -125,6 +125,9 @@ t('fourier', t => {
 	draw(fn.fourier, [0, 1, 0, .5], [0, .5, 0, .1], true)
 	var series = populate(fn.fourier, 8, [1, .5, .25, .125], true);
 	t.equal(series[0], 1)
+
+	populate(fn.fourier, 8, null, [1, .5, .25, .125], true);
+	populate(fn.fourier, 8, [1, .5, .25, .125], null, true);
 	t.end()
 });
 
