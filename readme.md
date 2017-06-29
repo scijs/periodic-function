@@ -24,16 +24,16 @@ The `fn` takes the amount of turn `t` as the first argument and optional paramet
 
 | Signature | Waveform | Meaning |
 ---|:---:|---|
-| <code>sine(t,&nbsp;phase=0)</code> | ![sine](https://raw.githubusercontent.com/dfcreative/periodic-function/master/sine.png) | `Math.sin` normalized to `0..1` rather than radians `0..2π`. To turn into cos, set `phase=.25`. |
-| <code>triangle(t,&nbsp;ratio=0.5)</code> | ![triangle](https://raw.githubusercontent.com/dfcreative/periodic-function/master/triangle.png) | Triangular waveform with regulated ratio. To turn into sawtooth set `ratio=0` or `ratio=1`. |
-| <code>sawtooth(t,&nbsp;inverse=false)</code> | ![sawtooth](https://raw.githubusercontent.com/dfcreative/periodic-function/master/sawtooth.png) | Edge case of triangular waveform, whether descending or ascending. |
-| <code>square(t,&nbsp;ratio=0.5)</code> | ![square](https://raw.githubusercontent.com/dfcreative/periodic-function/master/square.png) | Rectangular waveform with regulated ratio. To turn into pulse set `ratio=0`. |
-| <code>pulse(t,&nbsp;tlr=0)</code> | ![pulse](https://raw.githubusercontent.com/dfcreative/periodic-function/master/pulse.png) | Delta-pulse, which is `1` at `0` and `0` anywhere else. Pass `tlr` as a precision tolerance, ie. `1e-5`. |
-| <code>fourier(t,&nbsp;real,&nbsp;imag?, normalize=false)</code> | ![fourier](https://raw.githubusercontent.com/dfcreative/periodic-function/master/fourier.png) | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients, ie. harmonics. `0` harmonic is static level, `1`st is base frequency, `2`nd is double base frequency, `3`rd is triple etc. Set `normalize=true` to bring max harmonic to `1`. |
-| <code>clausen(t,&nbsp;limit=10)</code> | ![clausen](https://raw.githubusercontent.com/dfcreative/periodic-function/master/clausen.png) | [Clausen function](https://en.wikipedia.org/wiki/Clausen_function). Pass `limit` to indicate number of iterations, precision/performance tradeoff. |
-| <code>step(t, samples)</code> | ![step](https://raw.githubusercontent.com/dfcreative/periodic-function/master/step.png) | [Step function](https://en.wikipedia.org/wiki/Step_function), picks closest sample value out of a set. |
-| <code>interpolate(t, samples)</code> | ![interpolate](https://raw.githubusercontent.com/dfcreative/periodic-function/master/interpolate.png) | Interpolates between closest values in a sample set. |
-| <code>noise(t)</code> | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/noise.png) | Repeated sample of noise. |
+| <code>sine(t,&nbsp;phase=0)</code> | ![sine](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/sine.png) | `Math.sin` normalized to `0..1` rather than radians `0..2π`. To turn into cos, set `phase=.25`. |
+| <code>triangle(t,&nbsp;ratio=0.5)</code> | ![triangle](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/triangle.png) | Triangular waveform with regulated ratio. To turn into sawtooth set `ratio=0` or `ratio=1`. |
+| <code>sawtooth(t,&nbsp;inverse=false)</code> | ![sawtooth](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/sawtooth.png) | Edge case of triangular waveform, whether descending or ascending. |
+| <code>square(t,&nbsp;ratio=0.5)</code> | ![square](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/square.png) | Rectangular waveform with regulated ratio. To turn into pulse set `ratio=0`. |
+| <code>pulse(t,&nbsp;tlr=0)</code> | ![pulse](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/pulse.png) | Delta-pulse, which is `1` at `0` and `0` anywhere else. Pass `tlr` as a precision tolerance, ie. `1e-5`. |
+| <code>fourier(t,&nbsp;real,&nbsp;imag?, normalize=false)</code> | ![fourier](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/fourier.png) | [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) coefficients, ie. harmonics. `0` harmonic is static level, `1`st is base frequency, `2`nd is double base frequency, `3`rd is triple etc. Set `normalize=true` to bring max harmonic to `1`. |
+| <code>clausen(t,&nbsp;limit=10)</code> | ![clausen](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/clausen.png) | [Clausen function](https://en.wikipedia.org/wiki/Clausen_function). Pass `limit` to indicate number of iterations, precision/performance tradeoff. |
+| <code>step(t, samples)</code> | ![step](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/step.png) | [Step function](https://en.wikipedia.org/wiki/Step_function), picks closest sample value out of a set. |
+| <code>interpolate(t, samples)</code> | ![interpolate](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/interpolate.png) | Interpolates between closest values in a sample set. |
+| <code>noise(t)</code> | ![noise](https://raw.githubusercontent.com/dfcreative/periodic-function/master/img/noise.png) | Repeated sample of noise. |
 
 If you feel like it is not complete list of you know example of a good periodic function, suitable for dsp, welcome to [contribute](https://github.com/dfcreative/periodic-function/issues).
 
