@@ -12,9 +12,11 @@ module.exports = function fourier (t, real, imag, normalize) {
 		normalize = imag
 		imag = null
 	}
-	for (var harmonic = 0; harmonic < N; harmonic++) {
-		res += real[harmonic] * Math.cos(τ * t * harmonic)
-		sumReal += real[harmonic];
+	if (real) {
+		for (var harmonic = 0; harmonic < N; harmonic++) {
+			res += real[harmonic] * Math.cos(τ * t * harmonic)
+			sumReal += real[harmonic];
+		}
 	}
 
 	if (imag) {
