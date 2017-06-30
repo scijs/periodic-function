@@ -2,6 +2,7 @@
 
 module.exports = function triangle(t, ratio) {
 	t%=1
+	if (t < 0) t += 1
 
 	if (ratio == 0.5 || ratio == null) {
 		if (t > 0.5) t = 1 - t;

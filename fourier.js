@@ -6,6 +6,7 @@ module.exports = function fourier (t, real, imag, normalize) {
 	var sumReal = 0, sumImag = 0;
 
 	t %= 1
+	if (t < 0) t += 1
 
 	if (imag === true) {
 		normalize = imag

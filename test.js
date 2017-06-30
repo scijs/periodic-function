@@ -38,6 +38,7 @@ t('sin', t => {
 	t.equal(sin[0], 0);
 	t.equal(sin[~~(1024/4)], 1);
 	t.ok(almost(sin[~~(1024/2)], 0, 0.0001, 0.0001));
+	t.equal(fn.sine(-.75), fn.sine(.25))
 	t.end()
 });
 
@@ -66,6 +67,7 @@ t('pulse', t => {
 	t.equal(pulse[0], 1);
 	t.equal(pulse[1], 0);
 	t.equal(pulse[9], 0);
+	t.equal(fn.pulse(-.75), fn.pulse(.25))
 	t.end()
 });
 
@@ -83,6 +85,7 @@ t('square', t => {
 	t.equal(square[4], -1);
 	t.equal(square[5], -1);
 	t.equal(square[9], -1);
+	t.equal(fn.square(-.75), fn.square(.25))
 	t.end()
 });
 
@@ -97,6 +100,7 @@ t('triangle', t => {
 	t.equal(triangle[4], -1);
 	t.equal(triangle[6], 0);
 	t.equal(triangle[7], 0.5);
+	t.equal(fn.triangle(-.75), fn.triangle(.25))
 	t.end()
 });
 
@@ -117,6 +121,8 @@ t('saw', t => {
 	var sawi = populate(fn.sawtooth, 8, true);
 	t.equal(sawi[0], -1);
 	t.equal(sawi[7], .75);
+
+	t.equal(fn.sawtooth(-.75), fn.sawtooth(.25))
 	t.end()
 });
 
@@ -141,6 +147,7 @@ t('clausen', t => {
 	draw(fn.clausen)
 	var clausen = populate(fn.clausen, 10);
 	t.ok(almost(clausen[5], 0))
+	t.equal(fn.clausen(-.75), fn.clausen(.25))
 	t.end()
 });
 

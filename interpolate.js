@@ -2,6 +2,7 @@
 
 module.exports = function interpolate(t, samples) {
 	t%=1
+	if (t < 0) t += 1
 
 	var ptr = t*samples.length
 	var left = Math.floor(ptr)
