@@ -1,7 +1,7 @@
 'use strict'
 
 var τ = Math.PI * 2
-module.exports = function noise (t, limit) {
+module.exports = function clausen (t, limit) {
 	if (limit == null) limit = 10
 
 	t %= 1
